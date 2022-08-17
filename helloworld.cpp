@@ -47,5 +47,17 @@ int main()
     cin >> i;
     cout << "You entered " << i << endl;
 
+    // If Else Condition
+    int j;
+    cout << "Enter first number: ";
+    cin >> i;
+    cout << "Enter second number: ";
+    cin >> j;
+    if (i==j)
+        cout << "Equal";
+    else if (i>j)
+        cout << "Greater";
+    else
+        cout << "Smaller";
     return 0;
 }
