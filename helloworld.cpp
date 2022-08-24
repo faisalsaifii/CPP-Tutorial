@@ -1,13 +1,16 @@
 #include <iostream>// contains all C++ streams
 #include <cstdio> // contains all old C functions to print and write to files (printf(), fprintf(), fopen(), etc)
 
+// If you don't use this statement then use std with every stream
 using namespace std;
-int main()
-{
+
+int main(){
     // Print using iostream
     cout << "Print using cout\n";
     // Print using printf
     printf("Print using printf\n");
+    // Standard COUT
+    std::cout<<"Print using std::cout\n";
 
     // Declaring a variable
     // Integer
@@ -60,4 +63,20 @@ int main()
     else
         cout << "Smaller";
     return 0;
+
+    // For Loop
+    for(int i = 0 ; i < 10 ; i++){
+        cout << "* ";
+    }
+
+    // Array
+    // One Dimensional
+    int a[10];
+    for(int i=0 ; i<10 ; i++){
+        cin>>a[i];
+    }
+    for(int i=0 ; i<10 ; i++){
+        cout<<a[i]<<endl;
+    }
+    
 }
